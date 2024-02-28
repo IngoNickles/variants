@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="35">
+  <config>
+    <config>
+      <key>COVERAGE_TYPE</key>
+      <value>Statement+Branch</value>
+    </config>
+    <search-directory type="TESTABLE_SOURCE_DIR">$(VCAST_SourceRoot)\src\package_vector</search-directory>
+    <base-directories>
+      <key>VCAST_SourceRoot</key>
+      <value>$(ACTUAL_DIR)</value>
+    </base-directories>
+    <saved-logs>5</saved-logs>
+    <build-directory-naming-strategy>COMPRESSED</build-directory-naming-strategy>
+  </config>
+  <project-id>1707838744</project-id>
+  <factor-config-options>0</factor-config-options>
+  <environment name="UUT_VECTOR" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>all_in_one/build/1549301711</original-environment-directory>
+    </config>
+  </environment>
+  <group name="PackageVector">
+    <environment name="UUT_VECTOR"/>
+  </group>
+  <compiler>
+    <compiler>
+      <name>VectorCAST_MinGW_C</name>
+      <config>
+        <config>
+          <key>VARIANT_LOGICS_PATH</key>
+          <value>$(SUPPORTFILES_DIR)\tc_logic.py</value>
+          <key>C_COMPILER_TAG</key>
+          <value>BUILTIN_MINGW_C</value>
+        </config>
+      </config>
+    </compiler>
+    <testsuite name="2DIM">
+      <group name="PackageVector"/>
+    </testsuite>
+    <testsuite name="3DIM">
+      <config>
+        <config>
+          <key>C_DEFINE_LIST</key>
+          <value>THREE_DIMENSIONAL</value>
+        </config>
+      </config>
+      <group name="PackageVector"/>
+    </testsuite>
+  </compiler>
+</project>
