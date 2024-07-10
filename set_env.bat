@@ -1,7 +1,7 @@
 if "%SET_ENV_BATCH_GUARD%" NEQ "" GOTO :EOF
 
   rem Set path to VectorCAST install directory
-  set VECTORCAST_DIR=d:\vcast\2024
+  set VECTORCAST_DIR=d:\vcast\2024sp2
 
   rem VectorCAST license stuff
   set VECTOR_LICENSE_FILE=@localhost
@@ -27,3 +27,6 @@ if "%SET_ENV_BATCH_GUARD%" NEQ "" GOTO :EOF
   
   rem If you do not want VectorCAST to perform test case maintenance, set this to disable 
   set VCAST_DISABLE_TEST_MAINTENANCE=1
+  
+  rem Any changes to the project configuration should require an environment-rebuild
+  set VCAST_CBT_CFG_CHANGES=1

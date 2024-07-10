@@ -1,4 +1,4 @@
--- VectorCAST 24 (02/13/24)
+-- VectorCAST 24.sp2 (06/09/24)
 -- Test Case Script
 --
 -- Environment    : UUT_VECTOR

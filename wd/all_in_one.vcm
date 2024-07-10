@@ -3,7 +3,11 @@
   <config>
     <config>
       <key>COVERAGE_TYPE</key>
-      <value>Statement+Branch</value>
+      <value>Branch</value>
+      <key>VCAST_FILE_VERSION_COMMAND</key>
+      <value>dir</value>
+      <key>VCAST_SHOW_ONLY_DATA_WITH_EXPECTED_VALUES</key>
+      <value>TRUE</value>
     </config>
     <search-directory type="TESTABLE_SOURCE_DIR">$(VCAST_SourceRoot)\src\package_vector</search-directory>
     <base-directories>
@@ -30,8 +34,10 @@
       <name>VectorCAST_MinGW_C</name>
       <config>
         <config>
+          <key>WHITEBOX</key>
+          <value>NO</value>
           <key>VARIANT_LOGICS_PATH</key>
-          <value>$(SUPPORTFILES_DIR)\tc_logic.py</value>
+          <value>$(SUPPORTFILES_DIR)/tc_logic.py</value>
           <key>C_COMPILER_TAG</key>
           <value>BUILTIN_MINGW_C</value>
         </config>
